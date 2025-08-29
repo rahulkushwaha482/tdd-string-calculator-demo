@@ -17,4 +17,8 @@ void main() {
   test('two number return its sum', () {
     expect(stringCal.add('2,60'), equals(62));
   });
+
+  test('multiple number return its sum', () {
+    expect(stringCal.add('2,60,0,5'), equals(67));
+  });
 }
