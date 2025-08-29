@@ -13,4 +13,8 @@ void main() {
   test('send single number return that number itself', () {
     expect(stringCal.add('3'), equals(3));
   });
+
+  test('two number return its sum', () {
+    expect(stringCal.add('2,60'), equals(62));
+  });
 }
