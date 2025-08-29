@@ -28,4 +28,20 @@ void main() {
   test('Handled custom delimeter and return its sum', () {
     expect(stringCal.add('//;\n1;28'), equals(29));
   });
+
+  test(
+    'Pass the Negative numbers and throw the exceptions and negative number',
+    () {
+      expect(
+        () => stringCal.add('-3,7,-6'),
+        throwsA(
+          predicate(
+            (e) => e.toString().contains(
+              'Negative numbers are not allowed: -3,-6',
+            ),
+          ),
+        ),
+      );
+    },
+  );
 }
