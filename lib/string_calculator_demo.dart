@@ -24,7 +24,11 @@ class StringAdditionCalculator {
         'Negative numbers are not allowed: ${negatives.join(",")}',
       );
     }
+    var sum = 0;
+    for (var n in nums) {
+      sum += n;
+    }
 
-    return nums.fold(0, (a, b) => a + b);
+    return sum;
   }
 }
