@@ -1,5 +1,4 @@
-import 'package:tdd_string_calculator_demo/tdd_string_calculator_demo.dart' as tdd_string_calculator_demo;
+import 'package:tdd_string_calculator_demo/string_calculator_demo.dart'
+    as tdd_string_calculator_demo;
 
-void main(List<String> arguments) {
-  print('Hello world: ${tdd_string_calculator_demo.calculate()}!');
-}
+void main(List<String> arguments) {}
