@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:tdd_string_calculator_demo/string_calculator_demo.dart';
 import 'package:test/test.dart';
 
@@ -6,5 +8,9 @@ void main() {
 
   test('If we pass empty String ,it will return 0', () {
     expect(stringCal.add(''), equals(0));
+  });
+
+  test('send single number return that number itself', () {
+    expect(stringCal.add('3'), equals(3));
   });
 }
