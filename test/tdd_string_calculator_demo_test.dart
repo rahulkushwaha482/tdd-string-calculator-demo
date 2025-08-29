@@ -24,4 +24,8 @@ void main() {
   test('Handled the new line as delimeter', () {
     expect(stringCal.add('1\n2,3'), equals(6));
   });
+
+  test('Handled custom delimeter and return its sum', () {
+    expect(stringCal.add('//;\n1;28'), equals(29));
+  });
 }
